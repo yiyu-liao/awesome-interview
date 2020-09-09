@@ -8,6 +8,8 @@ Proxy + Snabbom
 
 浏览器dom节点的创建，更新等操作是非常消耗性能的，于是使用sanbbdom虚拟dom的管理dom的变化，通过proxy拦截filter条件变量set方法，在条件发生变化时候，触发生成最新的vnode，通过sanbbdom的diff计算，尽可能复用原有的dom节点。在细节处理中，简单增加了一个cache缓存，优化查找分类的效率。
 
+online: https://codesandbox.io/s/xmind-75dqm?file=/index.html
+
 
 
 
